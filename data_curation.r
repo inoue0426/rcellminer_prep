@@ -4,7 +4,6 @@
 library(rcellminer)
 library(rcellminerData)
 
-dir.create("data", showWarnings = FALSE)
 drugAct <- exprs(getAct(rcellminerData::drugData))
 write.csv(drugAct, 'data/drug_response.csv')
 
