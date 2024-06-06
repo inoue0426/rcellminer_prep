@@ -21,5 +21,8 @@ write.csv(expression, 'data/log2_gene_expression.csv') # Save as a CSV file
 copy <- getAllFeatureData(rcellminerData::molData)[["cop"]] # Retrieve copy number data
 write.csv(copy, 'data/copy.csv') # Save as a CSV file
 
+met <- getAllFeatureData(rcellminerData::molData)[["met"]] # Retrieve methylation data
+write.csv(met, 'data/methylation.csv') # Save methylation data as a CSV file
+
 system("python preprocess.py") # Execute the preprocess.py script
 
